@@ -60,6 +60,7 @@
         instagramHandle: "@russell_studebaker",
         instagramUrl: "https://www.instagram.com/russell_studebaker/",
         photo: "assets/russell-studebaker.png"
+        crop: "50% 10%"
       },
       {
         name: "Alex Nava",
@@ -69,6 +70,7 @@
         instagramHandle: "@alexnava.6",
         instagramUrl: "https://www.instagram.com/alexnava.6/",
         photo: "assets/alex-nava.jpg"
+        crop: "50% 32%"
       },
       {
         name: "Krystian Pajdak",
@@ -78,6 +80,7 @@
         instagramHandle: "@krystianpajdak",
         instagramUrl: "https://www.instagram.com/krystianpajdak/",
         photo: "assets/krystian-pajdak.jpg"
+        crop: "50% 6%"
       },
       {
         name: "Nick Cerreto",
@@ -87,6 +90,7 @@
         instagramHandle: "@nick_cerreto3",
         instagramUrl: "https://www.instagram.com/nick_cerreto3/",
         photo: "assets/nick-cerreto.png"
+        crop: "50% 4%"
       }
     ];
 
@@ -102,10 +106,12 @@
       grid.innerHTML = TEAM.map(m => `
         <article class="card-hover overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl">
           <div class="relative">
-            <img src="${m.photo}" alt="${m.name}" class="h-64 w-full object-cover object-center"
-              loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
+           <img
+  src="${m.photo}"
+  alt="${m.name}"
+  class="h-[420px] sm:h-[360px] w-full object-cover"
+  style="object-position: ${m.crop || '50% 22%'};"
+/>
             <div style="display:none" class="h-64 w-full items-center justify-center bg-gradient-to-br from-[#0b0b10] to-[#1c0f1a]">
               <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15 text-white text-2xl font-extrabold">
                 ${initials(m.name)}
@@ -266,4 +272,5 @@
 </main>
 </body>
 </html>
+
 
