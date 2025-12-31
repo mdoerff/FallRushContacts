@@ -193,141 +193,77 @@
     </div>
   </header>
 
-  <main class="mx-auto max-w-6xl px-4">
-    <!-- Hero -->
-    <section class="py-14 sm:py-20">
-      <div class="grid gap-12 lg:grid-cols-12 lg:items-center">
-        <div class="lg:col-span-7">
-          <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70 ring-1 ring-white/10">
-            <span class="h-2 w-2 rounded-full bg-amber-400"></span>
-            <span>Spring Rush • ΔΤΔ @ USF</span>
-          </div>
+ <main class="mx-auto max-w-6xl px-4">
 
-          <h1 class="mt-5 text-4xl font-extrabold tracking-tight sm:text-6xl">
-            <span class="block deltopia text-white">
-              DELTØPIA
-            </span>
-            <span class="block text-white/70 text-2xl sm:text-3xl font-semibold mt-3">
-              Spring Rush — meet the team, get plugged in.
-            </span>
-          </h1>
+  <!-- HERO -->
+  <section class="pt-12 pb-10 text-center">
+    <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70 ring-1 ring-white/10">
+      <span class="h-2 w-2 rounded-full bg-amber-400"></span>
+      <span>Spring Rush • ΔΤΔ @ USF</span>
+    </div>
 
-          <p class="mt-6 max-w-2xl text-base leading-relaxed text-white/70">
-            This is the fastest way to connect with our Spring Rush team. Tap any profile to DM on Instagram.
-            Keep it simple: name, year, and what you’re looking for this semester.
+    <h1 class="mt-6 text-5xl sm:text-6xl font-extrabold tracking-tight">
+      <span class="block deltopia">DELTØPIA</span>
+    </h1>
+
+    <p class="mt-4 text-white/70 text-base">
+      Don’t overthink it. Just reach out.
+    </p>
+  </section>
+
+  <!-- RUSH DATES -->
+  <section class="pb-14">
+    <div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-6 py-5 text-center">
+      <div class="text-xs uppercase tracking-widest text-white/50">
+        Rush Week
+      </div>
+      <div class="mt-2 text-xl font-semibold text-white">
+        January 21 – January 28
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="pb-20">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-extrabold tracking-tight">Spring Rush Team</h2>
+      <span class="hidden sm:block deltopia text-white/40 text-sm">DELTØPIA</span>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4" id="teamGrid"></div>
+  </section>
+
+  <!-- MEET THE TEAM IMAGE (BOTTOM) -->
+  <section class="pb-20">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
+      <div class="relative">
+        <img
+          src="assets/meet-the-team.jpg"
+          alt="Rush Team"
+          class="h-[420px] w-full object-cover object-center"
+          loading="lazy"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/10"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+          <p class="text-white/80 text-lg font-semibold">
+            Deltopia is wherever you are.
           </p>
-
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#team" class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black hover:opacity-95 transition">
-              View Rush Team
-            </a>
-            <a href="#deltopia" class="rounded-xl bg-white/5 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/10 hover:bg-white/10 transition">
-              What is DELTØPIA?
-            </a>
-          </div>
-
-          <div class="mt-6 text-xs text-white/55">
-            Building Better Men Since 1858
-          </div>
-        </div>
-
-        <!-- Right panel -->
-        <div class="lg:col-span-5">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-            <div class="text-sm text-white/70">Quick hits</div>
-
-            <div class="mt-4 grid gap-3">
-              <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
-                <div class="text-xs text-white/60">Best message</div>
-                <div class="mt-1 text-sm text-white/90">“What’s up — I’m ___, a ___ year. How do I come meet you guys?”</div>
-              </div>
-              <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
-                <div class="text-xs text-white/60">Response time</div>
-                <div class="mt-1 text-sm text-white/90">Usually same day.</div>
-              </div>
-              <div class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
-                <div class="text-xs text-white/60">Tip</div>
-                <div class="mt-1 text-sm text-white/90">Don’t overthink it. Just reach out.</div>
-              </div>
-            </div>
-
-            <div class="mt-6 text-xs text-white/55">
-              ΔΤΔ • USF
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Meet the team image section -->
-    <section id="deltopia" class="pb-14">
-      <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl">
-        <div class="relative">
-          <!-- ✅ Update this filename if your repo asset uses a different extension/case -->
-          <img src="assets/meet-the-team.jpg" alt="Rush Team Photo" class="h-[360px] w-full object-cover object-center"
-               loading="lazy"
-               onerror="this.style.display='none'; this.parentElement.classList.add('bg-black');"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/10"></div>
+  <!-- FOOTER -->
+  <footer class="pb-10 text-center text-sm text-white/50">
+    <div class="border-t border-white/10 pt-8">
+      <div class="text-white/70 font-semibold">Delta Tau Delta — University of South Florida</div>
+      <div class="mt-1">Building Better Men Since 1858</div>
+    </div>
+  </footer>
 
-          <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-            <div class="inline-flex items-center gap-2 rounded-full bg-black/55 px-3 py-1 text-xs text-white ring-1 ring-white/15">
-              <span class="h-2 w-2 rounded-full bg-amber-400"></span>
-              <span class="font-semibold tracking-wide">Meet the team behind Spring Rush</span>
-            </div>
-
-            <h2 class="mt-4 text-2xl sm:text-3xl font-extrabold tracking-tight">
-              DELTØPIA is the vibe — but we keep it real.
-            </h2>
-            <p class="mt-2 max-w-3xl text-sm sm:text-base text-white/75 leading-relaxed">
-              Aesthetic on the outside, substance underneath. If you’re looking for a group that’s locked-in socially,
-              academically, and as a brotherhood — DM us and come meet the team.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team cards -->
-    <section id="team" class="pb-16">
-      <div class="flex items-end justify-between gap-6">
-        <div>
-          <h3 class="text-2xl font-extrabold tracking-tight">Spring Rush Team</h3>
-          <p class="mt-2 text-white/70">Tap Instagram to message directly.</p>
-        </div>
-        <div class="hidden md:block text-sm text-white/55 deltopia">DELTØPIA</div>
-      </div>
-
-      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4" id="teamGrid"></div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="pb-20">
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl">
-        <h4 class="text-xl font-extrabold">General Contact</h4>
-        <p class="mt-2 text-white/70 max-w-2xl">
-          Not sure who to DM? Message any Recruitment Chair — they’ll route you to the right place.
-        </p>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#team" class="cta rounded-xl px-5 py-3 text-sm font-semibold text-black hover:opacity-95 transition">
-            Message the Team
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-             class="rounded-xl bg-white/5 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/10 hover:bg-white/10 transition">
-            Open Instagram
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="pb-10 text-center text-sm text-white/50">
-      <div class="border-t border-white/10 pt-8">
-        <div class="text-white/70 font-semibold">Delta Tau Delta — University of South Florida</div>
-        <div class="mt-1">Building Better Men Since 1858</div>
-      </div>
-    </footer>
-  </main>
+</main>
 </body>
 </html>
+
